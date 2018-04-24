@@ -26,6 +26,11 @@ module.exports = {
   plugins: [
     { src: '~/plugins/vue-particles', ssr: false }
   ],
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-118135878-1'
+    }]
+  ],
   loading: false,
   /*
   ** Build configuration
