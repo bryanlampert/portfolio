@@ -3,14 +3,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'bryan-lampert-portfolio',
+    title: 'Bryan Lampert',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Bryan Lampert Portfolio' }
     ],
     script: [
-      { src: 'http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', defer: true }
+      { src: 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', defer: true }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700' },
