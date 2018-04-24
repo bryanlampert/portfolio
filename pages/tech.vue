@@ -21,7 +21,7 @@
         </span>
       </div>
       <h2 class="subtitle is-4">{ Frameworks && Libraries && Environments }</h2>
-      <div class="columns is-multiline is-centered">
+      <div class="columns is-multiline is-centered is-mobile">
         <span v-for="(framework, index) in frameworks" :key="index">
           <div class="column is-narrow">
             <div class="card">
@@ -38,7 +38,7 @@
         </span>
       </div>
       <h2 class="subtitle is-4">{ Databases && Version Control }</h2>
-      <div class="columns is-multiline is-centered">
+      <div class="columns is-multiline is-centered is-mobile">
         <span v-for="(database, index) in databases" :key="index">
           <div class="column is-narrow">
             <div class="card">
@@ -55,7 +55,7 @@
         </span>
       </div>
       <h2 class="subtitle is-4">{ Adobe }</h2>
-      <div class="columns is-multiline is-centered">
+      <div class="columns is-multiline is-centered is-mobile">
         <span v-for="(dobe, index) in adobe" :key="index">
           <div class="column is-narrow">
             <div class="card">
