@@ -7,7 +7,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Bryan Lampert Portfolio' }
+      { hid: 'description', name: 'description', content: 'Bryan Lampert Portfolio' },
+      { name: 'google-site-verification', content: 'V0vPUmIfqIuuSJid8v0RtarmOQg-Lrlzf7SCy4w_qCs' }
     ],
     script: [
       { src: 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', defer: true }
