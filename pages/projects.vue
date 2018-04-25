@@ -34,7 +34,7 @@
                 View the repo!
               </a>
               <a v-if="website" class="button is-primary site" :href="website" target="_blank">
-                Visit the site!
+                Play the game!
               </a>
             </footer>
           </div>
@@ -172,7 +172,7 @@ export default {
           repo: "https://github.com/bryanlampert/tinyApp"
         },
         { 
-          name: "Five Day Weather Forecast",
+          name: "Five Day Forecast",
           subtitle: "Vue.js",
           group: false, 
           image: require("~/assets/images/projects/fiveday.png"),
