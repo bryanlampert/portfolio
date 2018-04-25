@@ -21,7 +21,9 @@
             </header>
             <section class="modal-card-body has-background-grey-dark">
               <div v-if="group" class="subtitle is-6">Group Project</div>
-              <img :src="image" class="is-mobile"><br><br>
+              <figure class="image is-3by2">
+                <img :src="image" class=" is-centered ">
+              </figure>
               <p class="has-text-primary"> {{ description1 }} </p>
               <p class="has-text-primary"> {{ description2 }} </p>
               <div class="codeContainer">
@@ -196,8 +198,10 @@ export default {
     border: 2px solid #1db98a;
     background-color: #1db98a;
   }
+  figure {
+    margin-bottom: 10px;
+  }
   img {
-    max-width: 500px;
     border-radius: 5px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
