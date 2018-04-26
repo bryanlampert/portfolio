@@ -111,6 +111,14 @@ export default {
         { name: "Illustrator", image: require("~/assets/images/tech/illustrator.png") }    
       ]
     }
+  },
+  head () {
+    return {
+      title: 'Tech Stack - Bryan Lampert',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Bryan Lampert - Tech Stack' }
+      ]
+    }
   }
 }
 </script>

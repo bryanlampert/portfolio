@@ -29,6 +29,19 @@
   </no-ssr>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'Home Page - Bryan Lampert',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Bryan Lampert - Home Page' }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
   h1, h2 {
     color: #1db98a;

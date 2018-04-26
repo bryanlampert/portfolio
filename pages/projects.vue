@@ -97,6 +97,14 @@ export default {
       this.showModal = true;
     }
   },
+  head () {
+    return {
+      title: 'Projects - Bryan Lampert',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Bryan Lampert - My Projects' }
+      ]
+    }
+  },
   data () {
     return {
       showModal: false,

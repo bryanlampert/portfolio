@@ -54,6 +54,19 @@
   </section>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'About Me - Bryan Lampert',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Bryan Lampert - About me' }
+      ]
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
   h2 {
     margin-top: 5rem;

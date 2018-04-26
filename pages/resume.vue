@@ -9,6 +9,19 @@
   </section>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'My Resume - Bryan Lampert',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Bryan Lampert - My Resume' }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
   .frame-container {
     position: relative;

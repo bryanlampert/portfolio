@@ -44,6 +44,19 @@
   </section>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'Contact - Bryan Lampert',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Bryan Lampert - Contact me' }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
 .content {
   max-width: 750px;

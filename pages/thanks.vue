@@ -12,6 +12,19 @@
   </div>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'Thanks - Bryan Lampert',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Bryan Lampert - Thanks for the submission' }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
   .button {
     margin: 20px;
