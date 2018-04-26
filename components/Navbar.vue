@@ -17,7 +17,7 @@
           <span aria-hidden="true"></span>
         </div>
       </div>
-      <div class="navbar-menu" id="navMenu" v-on:click="navBurger" :class="{ 'is-active': showBurger }">
+      <div class="navbar-menu" id="navMenu" @click="navBurger" :class="{ 'is-active': showBurger }">
         <div class="navbar-end">
           <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
           <div class="navbar-item has-dropdown is-hoverable">
@@ -71,6 +71,27 @@ div.button.navbar-burger:hover {
   border: 2px solid #fff;
   color: #fff;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  
+}
+div.navbar-dropdown.is-boxed {
+  background-color:  #1db98a;
+  color: #fff;
+  .navbar-item {
+    color: #fff;
+  }
+  :hover {
+    color: #1db98a;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.22);
+  }
+}
+div.navbar-menu.is-active {
+  background-color: #1db98a;
+  box-shadow: none;
+  .navbar-item, .navbar-link {
+    color: #fff;
+  }
+  :hover {
+    color: #1db98a;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.22);
+  }
 }
 </style>
