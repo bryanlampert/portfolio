@@ -2,17 +2,11 @@
   <section class="section is-medium">
     <div class="container has-text-centered has-text-light">
       <h1 class="title">About Me</h1>
-      <p>
-        Hey I'm Bryan Lampert and I’m a Toronto based web developer. 
+      <p v-for="(point, index) in about" :key="index" class="abt">
+         {{ point }}
       </p>
-      <p>
-        I'm a recent bootcamp graduate from Lighthouse Labs.
-      </p>
-      <p> 
-        Previous to the bootcamp I was in marketing with a Bachelor of Commerce degree.
-      </p>
-      <p>
-        I now make modern web applications with a focus on front end design.
+      <p class="abt">
+        Check out and play our game Toronto Adventure at <a :href="website" target="_blank">torontoadventure.ca</a> and you can find the project details on my <a href="/projects">projects page</a>.
       </p>
       <h2 class="subtitle is-size-3">Hobbies</h2>
       <div class="columns is-multiline is-centered is-mobile">
@@ -35,7 +29,7 @@
         <div class="column is-half-tablet is-one-third-desktop">
           <span class="subtitle t-6 has-text-primary">Sports</span>
           <p>
-            I play and watch any sport though I soccer and hockey will always be my first choice. <br /> <br />
+            I play and watch any sport though soccer and hockey will always be my first choice. <br /> <br />
             I also like to keep active and play various sports throughout the year. 
             In the summers I play outdoor competitive soccer and softball. 
             During the cold weather months I play indoor co-ed 6's soccer as well as beach volleyball.
@@ -63,6 +57,21 @@ export default {
         { hid: 'description', name: 'description', content: 'Bryan Lampert - About me' }
       ]
     }
+  },
+  data () {
+    return {
+      about: [
+        "Hey I am Bryan Lampert and I’m a Toronto based web developer.",
+        "I'm a recent bootcamp graduate from Lighthouse Labs full time web development course.",
+        "Previous to the bootcamp I worked in marketing and I have a Bachelor of Commerce degree in Marketing Management from the Univesity of Guelph.",
+        "Always keeping up with new technology and the tech industry, it was in high school where I got my first taste of programming learning the programming languages Turing and Visual Basic",
+        "After many years in marketing, it is coding and development where I feel most comfortable.",
+        "I consider myself to have strong logical and problem solving skills, which is why I was very attracted to taking my career in a new direction as a programmer.",
+        "I now create modern web applications with strong interests in Javascript frameworks such as Vue and React.",
+        "As a gamer since I was very young and living in the Greater Toronto Area throughout my life, my partner and I decided to make a 2D sidescrolling game for our Lighthouse final project.",
+      ],
+      website: "http://torontoadventuregame.ca"
+    }
   }
 }
 </script>
@@ -73,5 +82,8 @@ export default {
   }
   ul {
     list-style-type: disc;
+  }
+  .abt {
+    margin-bottom: 10px;
   }
 </style>
