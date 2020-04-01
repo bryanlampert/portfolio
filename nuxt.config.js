@@ -87,6 +87,12 @@ export default {
    */
   css: [],
   /*
+   ** Env variables
+   */
+  env: {
+    fullpageKey: process.env.FULLPAGE_KEY
+  },
+  /*
    ** Plugins to load before mounting the App
    */
   plugins: [
