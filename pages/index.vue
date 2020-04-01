@@ -36,6 +36,7 @@ export default {
   data() {
     return {
       options: {
+        licenseKey: process.env.fullpageKey,
         scrollOverflow: true,
         scrollBar: false,
         menu: '#fullpageMenu',
