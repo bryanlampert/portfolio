@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
+
 const description =
   'Portfolio website for Bryan Lampert. Web developer for modern websites and web applications.'
 const title = 'Bryan Lampert Portfolio'
