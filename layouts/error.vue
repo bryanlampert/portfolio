@@ -1,43 +1,44 @@
 <template>
-  <section class="section is-large">
-    <div class="container has-text-centered">
-      <div v-if="error.statusCode === 404">
-        <h1  class="fourohfour title has-text-primary">
-        404
-        </h1>
-        <h1 class="title has-text-primary">
-          PAGE NOT FOUND!
-        </h1>
-      </div>
-      <h1 v-else class="title has-text-primary">An error occurred</h1>
-      <p class="has-text-light">Head back to the last page or home page!</p>
-      <a @click="$router.go(-1)" class="button is-primary is-inverted"> Go back</a>
-      <nuxt-link to="/" class="button is-primary is-inverted">Home page</nuxt-link>
-    </div>
-  </section>
+  <v-app dark>
+    <h1 v-if="error.statusCode === 404">
+      {{ pageNotFound }}
+    </h1>
+    <h1 v-else>
+      {{ otherError }}
+    </h1>
+    <NuxtLink to="/">
+      Home page
+    </NuxtLink>
+  </v-app>
 </template>
 
 <script>
 export default {
-  props: ['error'],
+  layout: 'empty',
+  props: {
+    error: {
+      type: Object,
+      default: null
+    }
+  },
+  data() {
+    return {
+      pageNotFound: '404 Not Found',
+      otherError: 'An error occurred'
+    }
+  },
+  head() {
+    const title =
+      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
+    return {
+      title
+    }
+  }
 }
 </script>
 
 <style scoped>
-section {
-  margin-top: -15%;
-}
-.fourohfour {
-  font-size: 200px;
-}
-p {
-  margin-top: 50px;
-}
-.button {
-  margin: 30px;
-}
-.button.is-primary.is-inverted:hover {
-  background-color: #212121;
-  border: 2px solid #1db98a;
+h1 {
+  font-size: 20px;
 }
 </style>
