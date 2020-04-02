@@ -13,7 +13,12 @@
         </a>
       </h1>
     </v-col>
-    <v-col v-for="project in projects" :key="project.value" cols="auto">
+    <v-col
+      v-for="project in projects"
+      :key="project.value"
+      cols="auto"
+      class="pb-12 pb-md-0"
+    >
       <v-btn
         x-large
         raised
@@ -32,7 +37,7 @@
     >
       <v-card :tile="$vuetify.breakpoint.width <= 960">
         <v-row justify="end" class="px-3">
-          <v-btn icon text @click.stop="closeModal">
+          <v-btn x-large icon text @click.stop="closeModal">
             <v-icon>mdi-close</v-icon>
           </v-btn>
         </v-row>

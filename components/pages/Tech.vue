@@ -50,7 +50,7 @@
         Tech I've used
       </h1>
     </v-col>
-    <v-col cols="12" class="px-0 py-0 pb-md-8">
+    <v-col cols="12" class="px-0 pt-0 pb-12 pb-md-8">
       <v-container fluid class="pa-0">
         <v-row align="start" class="px-0">
           <v-col

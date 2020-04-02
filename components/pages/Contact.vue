@@ -104,7 +104,7 @@
         </v-row>
       </div>
     </v-col>
-    <v-col cols="12" md="6">
+    <v-col cols="12" md="6" class="pb-12 pb-md-0">
       <v-row align="center" justify="start">
         <v-col cols="12">
           <h2 class="display-1">
