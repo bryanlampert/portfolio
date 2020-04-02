@@ -16,12 +16,11 @@
         href="#home"
         nuxt
         class="font-weight-bold active"
-        :loading="loading"
       >
-        <span v-if="$vuetify.breakpoint.width > 960">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Home
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-home
         </v-icon>
       </v-btn>
@@ -32,12 +31,11 @@
         href="#tech"
         nuxt
         class="font-weight-bold"
-        :loading="loading"
       >
-        <span v-if="$vuetify.breakpoint.width > 960">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Tech
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-iframe
         </v-icon>
       </v-btn>
@@ -48,12 +46,11 @@
         href="#projects"
         nuxt
         class="font-weight-bold"
-        :loading="loading"
       >
-        <span v-if="$vuetify.breakpoint.width > 960">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Projects
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-monitor-dashboard
         </v-icon>
       </v-btn>
@@ -64,12 +61,11 @@
         href="#contact"
         nuxt
         class="font-weight-bold"
-        :loading="loading"
       >
-        <span v-if="$vuetify.breakpoint.width > 960">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Contact
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-card-account-mail
         </v-icon>
       </v-btn>
@@ -79,9 +75,6 @@
 
 <script>
 export default {
-  props: {
-    loading: Boolean
-  },
   data() {
     return {
       titleLarge: `<Bryan Lampert />`,
