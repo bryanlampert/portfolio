@@ -168,6 +168,12 @@ export default {
           href: 'https://www.linkedin.com/in/bryan-lampert/'
         },
         {
+          value: 'angel',
+          title: 'via AngelList',
+          icon: 'mdi-alpha-a-box',
+          href: 'https://angel.co/u/bryan-lampert'
+        },
+        {
           value: 'email',
           title: 'via bryan@bryanlampert.ca',
           icon: 'mdi-email',
