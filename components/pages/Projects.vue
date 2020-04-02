@@ -27,12 +27,12 @@
     </v-col>
     <v-dialog
       v-model="projectModal"
-      :fullscreen="$vuetify.breakpoint.smAndDown"
+      :fullscreen="$vuetify.breakpoint.width <= 960"
       :max-width="650"
     >
-      <v-card>
+      <v-card :tile="$vuetify.breakpoint.width <= 960">
         <v-row justify="end" class="px-3">
-          <v-btn icon flat @click.stop="closeModal">
+          <v-btn icon text @click.stop="closeModal">
             <v-icon>mdi-close</v-icon>
           </v-btn>
         </v-row>
@@ -92,7 +92,7 @@
                 :width="
                   $vuetify.breakpoint.width > 560
                     ? 560
-                    : $vuefity.breakpoint.width
+                    : $vuetify.breakpoint.width - 50
                 "
                 height="300"
                 src="https://www.youtube-nocookie.com/embed/mUV4PUu6LlY"

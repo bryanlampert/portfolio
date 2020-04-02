@@ -62,9 +62,6 @@ export default {
       }
     }
   },
-  beforeMount() {
-    console.log(this.$refs)
-  },
   methods: {
     afterLoad(origin, destination, direction) {
       this.loading = false

@@ -17,7 +17,7 @@
         nuxt
         class="font-weight-bold active"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-if="$vuetify.breakpoint.width > 960">
           Home
         </span>
         <v-icon v-else>
@@ -32,7 +32,7 @@
         nuxt
         class="font-weight-bold"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-if="$vuetify.breakpoint.width > 960">
           Tech
         </span>
         <v-icon v-else>
@@ -47,7 +47,7 @@
         nuxt
         class="font-weight-bold"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-if="$vuetify.breakpoint.width > 960">
           Projects
         </span>
         <v-icon v-else>
@@ -62,7 +62,7 @@
         nuxt
         class="font-weight-bold"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-if="$vuetify.breakpoint.width > 960">
           Contact
         </span>
         <v-icon v-else>
