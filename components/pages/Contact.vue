@@ -81,7 +81,12 @@
                 </ValidationProvider>
               </v-col>
               <v-col cols="12" class="pt-0">
-                <v-btn color="primary" class="black--text" type="submit">
+                <v-btn
+                  color="#212121"
+                  large
+                  class="submit-button"
+                  type="submit"
+                >
                   Submit
                 </v-btn>
               </v-col>
@@ -99,8 +104,8 @@
         </v-row>
       </div>
     </v-col>
-    <v-col cols="12" md="6" class="text-center mx-auto">
-      <v-row align="center" justify="center">
+    <v-col cols="12" md="6" class="pb-12 pb-md-0">
+      <v-row align="center" justify="start">
         <v-col cols="12">
           <h2 class="display-1">
             Connect with me
@@ -109,20 +114,19 @@
         <v-col v-for="link in links" :key="link.value" cols="12">
           <a
             :href="link.href"
-            class="mx-auto"
             style="text-decoration: none;"
             rel="nofollow noopener"
           >
             <v-row
               align="center"
-              justify="center"
+              justify="start"
               class="text-left mx-auto flex-nowrap"
             >
-              <v-col cols="12" md="8" offset-md="4" class="d-flex align-center">
-                <v-icon x-large color="light-blue">
+              <v-col cols="12" class="d-flex align-center">
+                <v-icon x-large color="blue darken-4">
                   {{ link.icon }}
                 </v-icon>
-                <h3 class="pl-4 headline light-blue--text">
+                <h3 class="pl-4 headline blue--text text--darken-4">
                   {{ link.title }}
                 </h3>
               </v-col>
@@ -162,6 +166,12 @@ export default {
           title: 'via LinkedIn',
           icon: 'mdi-linkedin',
           href: 'https://www.linkedin.com/in/bryan-lampert/'
+        },
+        {
+          value: 'angel',
+          title: 'via AngelList',
+          icon: 'mdi-alpha-a-box',
+          href: 'https://angel.co/u/bryan-lampert'
         },
         {
           value: 'email',
@@ -220,6 +230,15 @@ export default {
 }
 
 ::v-deep .v-messages__message {
-  color: #ef9a9a;
+  background-color: #ef5350;
+  color: #fff;
+}
+
+.submit-button {
+  border: 2px solid #212121;
+  &:hover {
+    background-color: #04a071 !important;
+    color: #212121 !important;
+  }
 }
 </style>

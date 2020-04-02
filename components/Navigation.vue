@@ -2,7 +2,7 @@
   <v-app-bar fixed app color="primary" elevation="0">
     <v-toolbar-title>
       <a href="#home" style="text-decoration: none;">
-        <h1 class="white--text">
+        <h1 class="display-1 font-weight-light white--text">
           {{ $vuetify.breakpoint.width > 820 ? titleLarge : titleSmall }}
         </h1>
       </a>
@@ -17,10 +17,10 @@
         nuxt
         class="font-weight-bold active"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Home
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-home
         </v-icon>
       </v-btn>
@@ -32,10 +32,10 @@
         nuxt
         class="font-weight-bold"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Tech
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-iframe
         </v-icon>
       </v-btn>
@@ -47,10 +47,10 @@
         nuxt
         class="font-weight-bold"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Projects
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-monitor-dashboard
         </v-icon>
       </v-btn>
@@ -62,10 +62,10 @@
         nuxt
         class="font-weight-bold"
       >
-        <span v-if="$vuetify.breakpoint.smAndUp">
+        <span v-show="$vuetify.breakpoint.width > 960">
           Contact
         </span>
-        <v-icon v-else>
+        <v-icon v-show="$vuetify.breakpoint.width <= 959">
           mdi-card-account-mail
         </v-icon>
       </v-btn>
