@@ -14,10 +14,10 @@
       </h1>
     </v-col>
     <v-col
-      v-for="project in projects"
+      v-for="(project, i) in projects"
       :key="project.value"
       cols="auto"
-      class="pb-12 pb-md-0"
+      :class="{ 'pb-12 pb-md-0': i === projects.length - 1 }"
     >
       <v-btn
         x-large
@@ -77,6 +77,7 @@
               <v-img
                 :src="require('~/assets/images/VF_Gitlab.png')"
                 class="mx-auto"
+                alt="Gitlab commit chart"
               >
                 <template v-slot:placeholder>
                   <v-row
@@ -113,7 +114,12 @@
         >
           <v-row align="center" justify="center">
             <v-col cols="12">
-              <v-img :src="projectSelected.img" height="400" contain>
+              <v-img
+                :src="projectSelected.img"
+                :alt="projectSelected.alt"
+                height="400"
+                contain
+              >
                 <template v-slot:placeholder>
                   <v-row
                     class="fill-height ma-0"
@@ -156,31 +162,36 @@ export default {
           value: 'hcpc',
           title: 'HC Professional Corporation',
           link: 'https://www.hcprofessionalcorporation.com/',
-          img: require('~/assets/images/hcpc.png')
+          img: require('~/assets/images/hcpc.png'),
+          alt: 'HC Professional Corporation website screenshot'
         },
         {
           value: 'five',
           title: 'Five Day Forecast',
           link: 'https://github.com/bryanlampert/fivedayforecast',
-          img: require('~/assets/images/fiveday.png')
+          img: require('~/assets/images/fiveday.png'),
+          alt: 'Five day forecast app screenshot'
         },
         {
           value: 'lhlgame',
           title: 'Toronto Adventure Game',
           link: 'https://github.com/bryanlampert/toronto-adventure',
-          img: require('~/assets/images/lhlgame.png')
+          img: require('~/assets/images/lhlgame.png'),
+          alt: 'Toronto Adventure Game screenshot'
         },
         {
           value: 'jungle',
           title: 'Jungle Ecommerce shop',
           link: 'https://github.com/bryanlampert/jungle-rails',
-          img: require('~/assets/images/jungle.png')
+          img: require('~/assets/images/jungle.png'),
+          alt: 'Jungle Ecommerce app screenshot'
         },
         {
           value: 'chatty',
           title: 'Chatty app',
           link: 'https://github.com/bryanlampert/chatty-app',
-          img: require('~/assets/images/chatty.png')
+          img: require('~/assets/images/chatty.png'),
+          alt: 'Chatty app screenshot'
         }
       ],
       projectModal: false,
