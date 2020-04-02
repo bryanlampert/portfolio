@@ -2,7 +2,7 @@
   <v-app-bar fixed app color="primary" elevation="0">
     <v-toolbar-title>
       <a href="#home" style="text-decoration: none;">
-        <h1 class="white--text">
+        <h1 class="display-1 font-weight-light white--text">
           {{ $vuetify.breakpoint.width > 820 ? titleLarge : titleSmall }}
         </h1>
       </a>

@@ -6,7 +6,7 @@
         <a
           href="https://github.com/bryanlampert/"
           rel="nofollow noopener"
-          class="blue--text"
+          class="blue--text text--darken-4"
           style="text-decoration: none;"
         >
           GitHub
@@ -18,6 +18,7 @@
         x-large
         raised
         elevation="6"
+        color="#212121"
         class="project-button"
         @click.stop="openProject(project)"
       >
@@ -245,8 +246,10 @@ export default {
 
 <style lang="scss" scoped>
 .project-button {
+  border: 2px solid #212121;
   &:hover {
-    color: #008657;
+    background-color: #1db98a !important;
+    color: #212121 !important;
   }
 }
 </style>
