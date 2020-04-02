@@ -1,20 +1,22 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <full-page id="fullpage" ref="fullpage" :options="options">
-      <div class="section">
-        <Home></Home>
-      </div>
-      <div class="section">
-        <Tech></Tech>
-      </div>
-      <div class="section">
-        <Projects></Projects>
-      </div>
-      <div class="section">
-        <Contact></Contact>
-      </div>
-    </full-page>
+    <no-ssr>
+      <full-page id="fullpage" ref="fullpage" :options="options">
+        <div class="section">
+          <Home></Home>
+        </div>
+        <div class="section">
+          <Tech></Tech>
+        </div>
+        <div class="section">
+          <Projects></Projects>
+        </div>
+        <div class="section">
+          <Contact></Contact>
+        </div>
+      </full-page>
+    </no-ssr>
   </div>
 </template>
 
