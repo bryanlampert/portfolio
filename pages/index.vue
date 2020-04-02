@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation></Navigation>
+    <Navigation :loading="loading"></Navigation>
     <div
       v-show="loading === true"
       style="background-color: #1db98a; height: 98vh;"

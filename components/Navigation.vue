@@ -16,6 +16,7 @@
         href="#home"
         nuxt
         class="font-weight-bold active"
+        :loading="loading"
       >
         <span v-if="$vuetify.breakpoint.width > 960">
           Home
@@ -31,6 +32,7 @@
         href="#tech"
         nuxt
         class="font-weight-bold"
+        :loading="loading"
       >
         <span v-if="$vuetify.breakpoint.width > 960">
           Tech
@@ -46,6 +48,7 @@
         href="#projects"
         nuxt
         class="font-weight-bold"
+        :loading="loading"
       >
         <span v-if="$vuetify.breakpoint.width > 960">
           Projects
@@ -61,6 +64,7 @@
         href="#contact"
         nuxt
         class="font-weight-bold"
+        :loading="loading"
       >
         <span v-if="$vuetify.breakpoint.width > 960">
           Contact
@@ -75,6 +79,9 @@
 
 <script>
 export default {
+  props: {
+    loading: Boolean
+  },
   data() {
     return {
       titleLarge: `<Bryan Lampert />`,
