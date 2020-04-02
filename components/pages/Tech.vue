@@ -158,7 +158,7 @@ export default {
         {
           id: 'jquery',
           title: 'jQuery',
-          img: require('~/assets/images/jQuery.png')
+          img: require('~/assets/images/jquery.png')
         },
         {
           id: 'bootstrap',
