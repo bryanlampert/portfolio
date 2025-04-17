@@ -18,4 +18,12 @@ export default defineNuxtConfig({
     ],
   },
   css: ['~/assets/css/tailwind.css'],
+  icon: {
+    customCollections: [
+      {
+        prefix: 'bl-icon',
+        dir: './assets/icons',
+      }
+    ]
+  }
 })

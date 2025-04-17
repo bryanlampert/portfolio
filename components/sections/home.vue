@@ -7,7 +7,9 @@
       Developer
     </h2>
     <p class="max-w-[600px]">
-      Turning designs into smooth, responsive websites and web apps. I’m all about building clean, pixel-perfect interfaces that actually feel good to use.
+      Turning designs into smooth, responsive websites and web apps. 
+      <br>
+      I’m all about building clean, pixel-perfect interfaces that actually feel good to use.
     </p>
   </div>
 </template>
