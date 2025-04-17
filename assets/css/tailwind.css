@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bl-main: #008170;
+  --color-bl-secondary: #005B41;
+  --color-bl-dark: #0F0F0F;
+  --color-bl-white: #F7FCFE;
+
+  --font-bl-main: "Fira Code", "sans-serif";
+  --font-bl-secondary: "Montserrat", "sans-serif";
+}
+
+@layer base {
+  html {
+    @apply text-bl-white font-bl-main;
+  }
+}
