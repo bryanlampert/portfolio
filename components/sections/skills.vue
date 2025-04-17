@@ -58,6 +58,18 @@ const skillsIcons = [
   {
     icon: 'bl-icon:tailwind',
     name: 'Tailwind CSS',
+  },
+  {
+    icon: 'bl-icon:git',
+    name: 'Git',
+  },
+  {
+    icon: 'bl-icon:figma',
+    name: 'Figma',
+  },
+  {
+    icon: 'bl-icon:jira',
+    name: 'Jira',
   }
 ]
 </script>

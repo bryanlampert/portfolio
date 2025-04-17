@@ -40,6 +40,11 @@
   justify-content: center;
   max-width: 1200px;
 }
+@media screen and (min-width: 1280px) {
+  .section-wrapper {
+    margin: 0 auto;
+  }
+}
 .section-title {
   font-weight: 600;
   font-size:calc(22px + (64 - 22) * ((100vw - 360px) / 1560));
