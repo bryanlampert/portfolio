@@ -6,7 +6,7 @@
     <p>
       With a focus on building frontend apps and websites, I have a strong foundation in HTML, CSS, and JavaScript. I’m also well-versed in modern frameworks like React and Vue.js, and I’m always eager to learn new technologies.  
     </p>
-    <div class="flex items-center justify-center gap-10 flex-wrap">
+    <div class="flex items-center justify-center gap-10 lg:gap-14 flex-wrap">
       <div v-for="icon in skillsIcons" :key="icon.name" class="flex flex-col items-center justify-center gap-2">
         <Icon :name="icon.icon" />
         <p class="text-center text-xs sm:text-sm">
@@ -38,6 +38,14 @@ const skillsIcons = [
   {
     icon: 'bl-icon:typescript',
     name: 'TypeScript',
+  },
+  {
+    icon: 'bl-icon:node',
+    name: 'Node.js',
+  },
+  {
+    icon: 'bl-icon:express',
+    name: 'Express.js',
   },
   {
     icon: 'bl-icon:html',
