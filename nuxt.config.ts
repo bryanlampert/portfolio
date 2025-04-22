@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     'nuxt-keen-slider',
+    '@vueuse/nuxt'
   ],
   vite: {
     plugins: [

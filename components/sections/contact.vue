@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="section-wrapper">
+  <div id="contact" class="section-wrapper">
     <h2 class="section-title">
       Contact
     </h2>
