@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bl-main: #008170;
+  --color-bl-secondary: #005B41;
+  --color-bl-dark: #0F0F0F;
+  --color-bl-white: #F7FCFE;
+
+  --font-bl-main: "Fira Code", "sans-serif";
+  --font-bl-secondary: "Montserrat", "sans-serif";
+}
+
+@layer base {
+  html {
+    @apply text-bl-white font-bl-main;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-bl-main) var(--color-bl-dark);
+    --tw-scrollbar-track: var(--color-bl-dark);
+    --tw-scrollbar-thumb: var(--color-bl-main);
+    --tw-scrollbar-thumb-hover: var(--color-bl-secondary);
+    --tw-scrollbar-thumb-active: var(--color-bl-secondary);
+  }
+}
