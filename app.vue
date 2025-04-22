@@ -5,8 +5,8 @@
       <SectionsHome class="section" />
       <SectionsAbout class="section" />
       <SectionsSkills class="section" />
-      <!-- <SectionsProjects class="section" />
-      <SectionsContact class="section" /> -->
+      <SectionsProjects class="section" />
+      <SectionsContact class="section" />
     </div>
   </div>
 </template>

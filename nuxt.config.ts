@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/ui',
+    'nuxt-keen-slider',
   ],
   vite: {
     plugins: [
@@ -25,5 +26,10 @@ export default defineNuxtConfig({
         dir: './assets/icons',
       }
     ]
+  },
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dggq7pngh/image/upload/',
+    }
   }
 })
