@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-bl-main text-bl-white h-16 flex justify-between items-center p-4 sticky top-0 z-10">
+  <div class="bg-bl-main text-bl-white h-16 flex justify-between items-center px-2.5 sm:px-4 py-4 sticky top-0 z-10">
     <div class="text-2xl font-medium font-bl-main tracking-wide w-auto min-w-20px cursor-pointer" @click="scrollIntoView('#home')">
         <span class="flex sm:hidden" v-text="titleSm" />
         <span class="hidden sm:flex" v-text="titleLg" />
     </div>
-    <div class="flex gap-3 sm:gap-8 items-center">
+    <div class="flex gap-2 sm:gap-8 items-center">
       <div 
         :class="{ 'active': aboutIsVisible }"
         class="nav-link" 

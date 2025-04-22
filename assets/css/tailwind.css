@@ -13,5 +13,11 @@
 @layer base {
   html {
     @apply text-bl-white font-bl-main;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-bl-main) var(--color-bl-dark);
+    --tw-scrollbar-track: var(--color-bl-dark);
+    --tw-scrollbar-thumb: var(--color-bl-main);
+    --tw-scrollbar-thumb-hover: var(--color-bl-secondary);
+    --tw-scrollbar-thumb-active: var(--color-bl-secondary);
   }
 }
