@@ -49,12 +49,27 @@ const scrollIntoView = (id: string) => {
   }
 }
 
+const home = ref<HTMLElement | null>(document && document.getElementById("home") || null)
+useIntersectionObserver(
+  home,
+  ([entry], observerElement) => {
+    if (entry.isIntersecting) {
+      history.pushState(null, '', '/')
+    }
+  },
+  {
+    threshold: 1.0,
+  }
+)
 const about = ref<HTMLElement | null>(document && document.getElementById("about") || null)
 const aboutIsVisible = shallowRef<boolean>(false)
 useIntersectionObserver(
   about,
   ([entry], observerElement) => {
     aboutIsVisible.value = entry.isIntersecting || false
+    if (entry.isIntersecting) {
+      history.pushState(null, '', '#about')
+    }
   },
   {
     threshold: 1.0,
@@ -66,6 +81,9 @@ useIntersectionObserver(
   skills,
   ([entry], observerElement) => {
     skillsIsVisible.value = entry.isIntersecting || false
+    if (entry.isIntersecting) {
+      history.pushState(null, '', '#skills')
+    }
   },
   {
     threshold: 1.0,
@@ -77,6 +95,9 @@ useIntersectionObserver(
   projects,
   ([entry], observerElement) => {
     projectsIsVisible.value = entry.isIntersecting || false
+    if (entry.isIntersecting) {
+      history.pushState(null, '', '#projects')
+    }
   },
   {
     threshold: 1.0,
@@ -88,6 +109,9 @@ useIntersectionObserver(
   contact,
   ([entry], observerElement) => {
     contactIsVisible.value = entry.isIntersecting || false
+    if (entry.isIntersecting) {
+      history.pushState(null, '', '#contact')
+    }
   },
   {
     threshold: 1.0,
