@@ -105,7 +105,6 @@ const dotHelper = computed(() => slider.value ? [...Array(slider.value.track.det
 }
 
 h3 {
-  font-size:calc(16px + (24 - 16) * ((100vw - 360px) / 1560));
   font-size: clamp(16px, calc(16px + (24 - 16) * ((100vw - 360px) / 1560)), 24px);
 }
 </style>

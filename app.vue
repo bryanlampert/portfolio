@@ -28,7 +28,6 @@
   max-width: 1200px;
 
   & p {
-    font-size:calc(12px + (20 - 12) * ((100vw - 360px) / 1560));
     font-size: clamp(12px, calc(12px + (20 - 12) * ((100vw - 360px) / 1560)), 20px);
   }
 }
@@ -46,7 +45,6 @@
 }
 .section-title {
   font-weight: 600;
-  font-size:calc(22px + (64 - 22) * ((100vw - 360px) / 1560));
   font-size: clamp(22px, calc(22px + (64 - 22) * ((100vw - 360px) / 1560)), 64px);
   line-height: 1.2;
   margin-bottom: 1rem;
