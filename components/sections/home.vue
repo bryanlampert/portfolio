@@ -21,7 +21,6 @@
 <style scoped>
 h2 {
   font-weight: 600;
-  font-size:calc(22px + (72 - 22) * ((100vw - 360px) / 1560));
   font-size: clamp(22px, calc(22px + (72 - 22) * ((100vw - 360px) / 1560)), 72px);
 }
 </style>
